@@ -1,0 +1,17 @@
+Problem #2: 
+(a) If we define sparse graph as graphs for which |E| ? O(|V|), which implementation of DFS will have a better 
+running time efficiency for such graphs, the one that uses the adjacency matrix or the one that uses the adjacency 
+linked lists representation? Justify. 
+	Adjacency linked lists,  The sparse graph would find it faster because it would be defined by the amount 
+of vertices. The adjacency matrix would be faster if it were O(|E|) instead. 
+
+(b) We can model a maze by having a vertex for a starting point, a finishing point, dead ends, and all the points 
+in the maze where more than one path can be taken and then connecting the vertices according to the paths.   
+
+(i) Construct such a graph for the following maze.
+	The answer is in the png file named "Problem 2 part B i" which is in this file.  
+                
+(ii) Which traversal, DFS or BFS, would you use if you found the solution in this maze? Justify. 
+	If I know the solution already, and can pick to go to it from the get go, then DFS would be better.
+	DFS goes through single paths to their ends first, while BFS goes through all the paths at the same time.
+	DFS has the potential to be faster if the first path it picks leads to the exit. 
